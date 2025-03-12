@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Преобразование типов" Height="600" Width="800">
+    <StackPanel Margin="10">
+        <!-- Блок для ввода данных -->
+        <TextBox x:Name="InputBox" Text="Введите данные" Margin="0,0,0,10" TextChanged="InputBox_TextChanged" />
+        <Button Content="Преобразовать" Click="ConvertButton_Click" Margin="0,0,0,10" />
+
+        <!-- Блок для вывода результатов -->
+        <TextBlock x:Name="ResultText" TextWrapping="Wrap" Margin="0,0,0,10" />
+
+        <!-- Кнопки для выполнения отдельных задач -->
+        <Button Content="1. Базовое преобразование типов" Click="BasicConversion_Click" Margin="0,0,0,10" />
+        <Button Content="2. Использование Convert.ToString" Click="ConvertToString_Click" Margin="0,0,0,10" />
+        <Button Content="3. Обработка null" Click="HandleNull_Click" Margin="0,0,0,10" />
+        <Button Content="4. Преобразование ASCII" Click="AsciiConversion_Click" Margin="0,0,0,10" />
+        <Button Content="5. Преобразование в HEX" Click="HexConversion_Click" Margin="0,0,0,10" />
+        <Button Content="6. Разбор строки в число (int.Parse)" Click="IntParse_Click" Margin="0,0,0,10" />
+        <Button Content="7. Безопасное преобразование (TryParse)" Click="TryParse_Click" Margin="0,0,0,10" />
+        <Button Content="8. Преобразование строки в дату" Click="DateTimeParse_Click" Margin="0,0,0,10" />
+        <Button Content="9. Преобразование строки в double" Click="ConvertToDouble_Click" Margin="0,0,0,10" />
+        <Button Content="10. Форматированный вывод числа" Click="FormattedOutput_Click" Margin="0,0,0,10" />
+        <Button Content="11. Преобразование булевого значения" Click="BoolConversion_Click" Margin="0,0,0,10" />
+        <Button Content="12. Пользовательский объект в строку" Click="CustomObjectToString_Click" Margin="0,0,0,10" />
+        <Button Content="13. Потеря точности при преобразовании" Click="PrecisionLoss_Click" Margin="0,0,0,10" />
+        <Button Content="14. Проверка переполнения" Click="OverflowCheck_Click" Margin="0,0,0,10" />
+        <Button Content="15. Комплексное задание" Click="ComplexTask_Click" Margin="0,0,0,10" />
+    </StackPanel>
+</Window>
